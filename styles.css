@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     /* background-color: rgb(56,182,255); */
-    background-color: rgb(18, 141, 217);
+    background-color: rgb(217, 114, 18);
     margin: 0; 
     padding: 0; 
     padding-top: constant(safe-area-inset-top); /* Handle top safe area */
@@ -14,7 +14,7 @@ body {
 header {
     /* background-color: rgb(56,182,255); */
     background-color: inherit;
-    height: 201px; 
+    height: 800px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@ header {
 }
 .normal-tmp-headers h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color:inherit;
     margin-top: 70px;
     margin-bottom: 10px;
@@ -36,7 +36,7 @@ header {
 
 .normal-tmp-headers h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 2.5em;
     color:inherit;
     margin-top: 20px;
     margin-left: 15px;
@@ -45,102 +45,36 @@ header {
 
 .normal-tmp-headers a:link, a:visited, a:active {
     text-decoration: none;
-    color:rgb(0, 21, 255);
+    color:rgb(120, 27, 6);
     border: none;
     border-top: 300px;
     
 }
 
 .normal-tmp-headers a:hover {
-    border: 5px blue solid;
+    border: 5px rgb(120, 27, 6) solid;
 }
 
 
 
 
-#slideshow-container {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    text-align: center; /* Center the images */
-    margin-top: 20px; /* Adjusted margin top */
-  
-}
 
-.slide {
-    display: none;
-    width: 100%;
-    text-align: center; /* Center the images */
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .normal-tmp-headers h1 {
+        font-size: 3em;
+        
+    
+    }
+    .normal-tmp-headers h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+
+    .normal-tmp-headers a:hover {
+        border: 2px rgb(120, 27, 6) solid;
+    }
     
 }
 
-img {
-    margin: 0 auto; /* Center the images */
-    display: block; /* Ensure the images are block-level elements for centering */
-    border: 10px;
-    width: 85%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 100px;
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    z-index: 1000;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-@media screen and (max-width: 460px) {
-    header {
-        height: 100px;
-    }
-    .header-logo {
-        max-height: 50px; /* Adjust the maximum height of the image */
-    }
-}
-
-@media screen and (max-width: 595px) {
-    header {
-        height: 150px;
-    }
-    .header-logo {
-        max-height: 150px; /* Adjust the maximum height of the image */
-    }
-}
-
-/* Media Queries for responsiveness */
-@media screen and (min-width: 768px) {
-    .button {
-        width: 80%; 
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .button {
-        width: 80%; 
-        font-size: 27px;
-    }
-}
-
-@media screen and (min-width: 2048px) {
-    .button {
-    width: 75%; 
-        font-size: 30px;
-
-    }}
