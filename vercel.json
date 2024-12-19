@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/media/$1",
+      "has": [
+        { "type": "host", "value": "media.test.miamibeachhotel.li" }
+      ]
+    }
+  ]
+}
