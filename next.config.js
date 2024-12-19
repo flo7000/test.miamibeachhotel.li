@@ -9,8 +9,8 @@ module.exports = {
             value: 'media.test.miamibeachhotel.li'
           }
         ],
-        // This will cause the browser to redirect and show the new URL
-        destination: '/media/:path*',
+        // Use a full absolute URL so we actually switch the domain
+        destination: 'https://test2.miamibeachhotel.li/media/:path*',
         permanent: false
       }
     ]
