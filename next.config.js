@@ -3,8 +3,14 @@ module.exports = {
     return {
       beforeFiles: [
         {
-          source: '/test-route',
-          destination: '/media'
+          source: '/:path*',
+          has: [
+            {
+              type: 'host',
+              value: 'media.test.miamibeachhotel.li'
+            }
+          ],
+          destination: '/media/:path*'
         }
       ]
     }
